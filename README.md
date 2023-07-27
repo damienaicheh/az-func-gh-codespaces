@@ -1,1 +1,1 @@
-# func-test
+# GitHub Workspace for Azure Functions using .Net 7.
