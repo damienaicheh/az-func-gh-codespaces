@@ -1,1 +1,1 @@
-# GitHub Workspace for Azure Functions using .Net 7.
+# GitHub codespaces for Azure Functions using .Net 7.
