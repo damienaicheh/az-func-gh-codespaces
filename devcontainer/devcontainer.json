@@ -1,19 +1,5 @@
 {
-	"build": {
-		"dockerfile": "Dockerfile",
-	},
-  "hostRequirements": {
-    "cpus": 4
-  },
-  "features": {
-    "azure-cli": "latest"
-  },
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "",
-  "postCreateCommand": "",
-  "postAttachCommand": {
-  },
-	"features": {
-		"git": "os-provided"
-	}
+  "build": {
+	"dockerfile": "Dockerfile",
+   }
 }
