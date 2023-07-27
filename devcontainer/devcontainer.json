@@ -1,0 +1,11 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/dotnet:7.0",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "",
+  "postCreateCommand": "",
+  "postAttachCommand": {
+  },
+}
