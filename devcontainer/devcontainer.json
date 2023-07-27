@@ -1,5 +1,7 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/dotnet:7.0",
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
   "hostRequirements": {
     "cpus": 4
   },
@@ -11,4 +13,7 @@
   "postCreateCommand": "",
   "postAttachCommand": {
   },
+	"features": {
+		"git": "os-provided"
+	}
 }
