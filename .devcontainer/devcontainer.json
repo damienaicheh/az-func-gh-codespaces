@@ -4,7 +4,8 @@
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
   "features": {
     "azure-cli": "latest",
-    "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}
+    "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}, 
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
   "postCreateCommand": "az bicep upgrade", 
   "customizations": {
