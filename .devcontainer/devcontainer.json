@@ -3,11 +3,17 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
   "features": {
-    "azure-cli": "latest",
+    "azure-cli": {
+      "version":"latest",
+      "installBicep":"true"
+    },
     "ghcr.io/jlaundry/devcontainer-features/azure-functions-core-tools:1": {}, 
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "docker-in-docker":{
+      "version":"latest",
+      "dockerDashComposeVersion": "v2"
+    }
   },
-  "postCreateCommand": "az bicep upgrade", 
+  "postCreateCommand": "sudo az aks install-cli && $PATH=$PATH+';/usr/bin/lib'", 
   "customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
