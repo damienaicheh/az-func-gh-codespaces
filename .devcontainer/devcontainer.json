@@ -11,9 +11,13 @@
     "docker-in-docker":{
       "version":"latest",
       "dockerDashComposeVersion": "v2"
+    },
+      "terraform":{ 
+        "version":"latest",
+        "tflint":"latest"
     }
   },
-  "postCreateCommand": "sudo az aks install-cli && $PATH=$PATH+';/usr/bin/lib'", 
+  "postCreateCommand": "sudo az aks install-cli && $PATH=$PATH+';/usr/bin/lib' && npm install -g @azure/static-web-apps-cli && sudo apt-get install redis-tools -y", 
   "customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
